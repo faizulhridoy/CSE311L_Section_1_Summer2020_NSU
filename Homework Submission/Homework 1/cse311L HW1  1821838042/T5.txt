@@ -1,0 +1,95 @@
+CREATE TABLE employees(
+    EMPLOYEE_ID int(5) NOT NULL PRIMARY KEY,
+    FIRST_NAME VARCHAR(10) NOT NULL,
+    LAST_NAME VARCHAR(10)NOT NULL,
+    EMAIL VARCHAR(10)NOT NULL,
+    PHONE_NUMBER VARCHAR (20) NOT NULL,
+    HIRE_DATE VARCHAR(20),
+    JOB_ID  VARCHAR(10)NOT NULL,
+    SALARY INT(8),
+    COMMISION_PCT  INT(3),
+    MANAGER_ID INT(5),
+    DEPEARTMENT_ID INT(3)
+)
+
+INSERT INTO employees VALUES(100,'Steven','King ','SKING ','515.123.4567 ','17-JUN-87 ','AD PRES ',24000,NULL,NULL,90)
+
+
+INSERT INTO employees VALUES(101,'Neena','NKOCHHAR ','SKING ','515.123.4568 ','21-SEP-89 ','AD VP',17000,NULL,100,90)
+
+INSERT INTO employees VALUES(102,'Lex','IDe Haan ','LDEHAAN ','515.123.4569 ','13-JAN-93','AD VP',17000,NULL,100,90)
+
+
+INSERT INTO employees VALUES(103,'Alexander','Hunold','AHUNOLD ','590.423.4567 ','03-JAN-90','IT PROG',9000,NULL,102,60)
+
+
+INSERT INTO employees VALUES(104,'Bruce','Ernst','IBERNST ','590.423.4568','21-MAY-91','IT PROG',6000,NULL,103,60)
+
+INSERT INTO employees VALUES(107,'Diana','Lorentz','DLORENTZ ','590.423.5567','07-FEB-99','IT PROG',4200,NULL,103,60)
+
+
+INSERT INTO employees VALUES(124,'Kevin','Mourgos ','KMOURGOS  ','650.123.5234 ','16-NOV-99 ','ST MAN ',5800 ,NULL,100 ,50 )
+
+INSERT INTO employees VALUES(141,'Trenna','1Rajs ','TRAJS  ','650.121.8009 ','17-OCT-95','ST CLERK ',3500 ,NULL,124 ,50 )
+
+
+
+INSERT INTO employees VALUES(142,'Curtis','Davies ','CDAVIES  ','650.121.2994 ','29-JAN-97','ST CLERK ',3100 ,NULL,124 ,50 )
+
+INSERT INTO employees VALUES(143,'Randall','Maths ','IRMATOS  ','650.121.2874','15-MAR-98','ST CLERK ',2600 ,NULL,124 ,50 )
+
+
+INSERT INTO employees VALUES(144,'Peter','Vargas','IPVARGAS','650.121.2004','09-JUL-98','ST CLERK',2500,NULL,124,50)
+
+INSERT INTO employees VALUES(149,'Eleni','Zlotkey','1ELLOTKEY','011.44.1344.429018','29-JAN-00','ISA MAN',10500,2,100,80)
+
+
+INSERT INTO employees VALUES(174,'Ellen','Abel','EABEL','011.44.1644.429267','11-MAY-96','SA REP ',11000 ,NULL,149,80)
+
+INSERT INTO employees VALUES(176,'Jonathon','Taylor ','JTAYLOR ','011.44.1644.429265','24-MAR-98 ','ISA REP  ',8600  ,2,149,80)
+
+
+INSERT INTO employees VALUES(178,'Kimberely','Grant ','KGRANT ','011.44.1644.429263','24-MAY-99 ','SA REP ',7000  ,15,149,NULL)
+
+INSERT INTO employees VALUES(200,'Jennifer','Whalen ','JWHALEN  ','1515.123.4444','17-SEP-87  ','AD ASST  ',4400  ,NULL,101,10)
+
+
+INSERT INTO employees VALUES(201,'Michael','1Hartstein ','IMHARTSTE   ','1515.123.5555','17-FEB-96   ','MK_MAN ',1300  ,NULL,101,20)
+
+
+INSERT INTO employees VALUES(202,'Pat','Fay ','IPFAY   ','1603.123.6666','17-AUG-97  ','MK REP ',8000  ,NULL,201,20)
+INSERT INTO employees VALUES(205,'Shelley','Higgins ','SHIGGINS   ','515.123.8080','07-JUN-94  ','AC MGR ',12000  ,NULL,101,110)
+
+
+INSERT INTO employees VALUES(206,'William','IGietz ','1WGIETZ   ','1515.123.8181','07-JUN-94 ','AC ACCOUNT',8300  ,NULL,205,110)
+
+
+
+
+
+
+SELECT *FROM Empolyees
+
+Full texts 					EMPLOYEE_ID	FIRST_NAME	LAST_NAME	EMAIL	PHONE_NUMBER		HIRE_DATE	JOB_ID	SALARY	COMMISION_PCT	MANAGER_ID	DEPEARTMENT_ID 	
+	Edit Edit	Copy Copy	Delete Delete	100 	Steven 		King 		SKING 	515.123.4567 		17-JUN-87 	AD PRES 	24000 	NULL 	NULL 		90
+	Edit Edit	Copy Copy	Delete Delete	101 	Neena 		NKOCHHAR 	SKING 	515.123.4568 		21-SEP-89 	AD VP 		17000 	NULL 	100 		90
+	Edit Edit	Copy Copy	Delete Delete	102 	Lex 		IDe Haan 	LDEHAAN 	515.123.4569 	13-JAN-93 	AD VP 		17000 	NULL 	100 		90
+	Edit Edit	Copy Copy	Delete Delete	103 	Alexander 	Hunold 		AHUNOLD 	590.423.4567 	03-JAN-90 	IT PROG 	9000 	NULL 	102 		60
+	Edit Edit	Copy Copy	Delete Delete	104 	Bruce 		Ernst 		IBERNST 	590.423.4568 	21-MAY-91 	IT PROG 	6000 	NULL 	103 		60
+	Edit Edit	Copy Copy	Delete Delete	107 	Diana 		Lorentz 	DLORENTZ 	590.423.5567 	07-FEB-99 	IT PROG 	4200 	NULL 	103 		60
+	Edit Edit	Copy Copy	Delete Delete	124 	Kevin 		Mourgos 	KMOURGOS   	650.123.5234 	16-NOV-99 	ST MAN 		5800 	NULL 	100 		50
+	Edit Edit	Copy Copy	Delete Delete	141 	Trenna 		1Rajs 		TRAJS   	650.121.8009 	17-OCT-95 	ST CLERK 	3500 	NULL 	124 		50
+	Edit Edit	Copy Copy	Delete Delete	142 	Curtis 		Davies 		CDAVIES   	650.121.2994 	29-JAN-97 	ST CLERK 	3100 	NULL 	124 		50
+	Edit Edit	Copy Copy	Delete Delete	143 	Randall 	Maths 		IRMATOS   	650.121.2874 	15-MAR-98 	ST CLERK 	2600 	NULL 	124 		50
+	Edit Edit	Copy Copy	Delete Delete	144 	Peter 		Vargas 		IPVARGAS 	650.121.2004 	09-JUL-98 	ST CLERK 	2500 	NULL 	124 		50
+	Edit Edit	Copy Copy	Delete Delete	149 	Eleni 		Zlotkey 	1ELLOTKEY    011.44.1344.429018 29-JAN-00 	ISA MAN 	10500 	2 	100 		80
+	Edit Edit	Copy Copy	Delete Delete	174 	Ellen 		Abel 		EABEL 		011.44.1644.429267 11-MAY-96 	SA REP 		11000 	NULL 	149 		80
+	Edit Edit	Copy Copy	Delete Delete	176 	Jonathon 	Taylor 		JTAYLOR 011.44.1644.429265 	24-MAR-98 	ISA REP   	8600 	2 	149 		80
+	Edit Edit	Copy Copy	Delete Delete	178 	Kimberely 	Grant 		KGRANT 	011.44.1644.429263 	24-MAY-99 	SA REP 		7000 	15 	149 		NULL
+	Edit Edit	Copy Copy	Delete Delete	200 	Jennifer 	Whalen 		JWHALEN   	1515.123.4444 	17-SEP-87   	AD ASST   	4400 	NULL 	101 		10
+	Edit Edit	Copy Copy	Delete Delete	201 	Michael 	1Hartstein 	IMHARTSTE 	1515.123.5555 	17-FEB-96   	MK_MAN 		1300 	NULL 	101 		20
+	Edit Edit	Copy Copy	Delete Delete	202 	Pat 		Fay 		IPFAY   	1603.123.6666 	17-AUG-97   	MK REP 		8000 	NULL 	201 		20
+	Edit Edit	Copy Copy	Delete Delete	205 	Shelley 	Higgins 	SHIGGINS   	515.123.8080 	07-JUN-94   	AC MGR 		12000 	NULL 	101 		110
+	Edit Edit	Copy Copy	Delete Delete	206 	William 	IGietz 		1WGIETZ   	1515.123.8181 	07-JUN-94 	AC ACCOUNT 	8300 	NULL 	205 		110
+With selected: Check all With selected:
+                             

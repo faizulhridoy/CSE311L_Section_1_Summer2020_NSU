@@ -1,0 +1,28 @@
+CREATE TABLE Departments(
+	Department_id int (5) PRIMARY key,
+    Department_Name VARCHAR(15) NOT NULL,
+    Mnager_id INT(5),
+    Location_id INT(5)
+);
+
+
+INSERT INTO departments values(10,'Administration',200,1700)
+INSERT INTO departments VALUES(20,'Marketing',201,1800)
+INSERT INTO departments VALUES(50,'Shipping',124,1500)
+INSERT INTO departments VALUES(60,'IT',103,1400)
+INSERT INTO departments VALUES(80,'Sales',149,2500)
+INSERT INTO departments VALUES(110,'Accounting',205,1700)
+INSERT INTO departments VALUES (190,'Contracting',NULL,1700)
+
+SELECT *FROM departments 
+
+
+Full texts 				Department_id	      Department_Name	Mnager_id	             Location_id 	
+	Edit Edit	Copy Copy	Delete Delete	10 	Administration 	200 				1700
+	Edit Edit	Copy Copy	Delete Delete	20 	Marketing 	201 				1800
+	Edit Edit	Copy Copy	Delete Delete	50 	Shipping 	124 				1500
+	Edit Edit	Copy Copy	Delete Delete	60 	IT 		103 				1400
+	Edit Edit	Copy Copy	Delete Delete	80 	Sales 		149 				2500
+	Edit Edit	Copy Copy	Delete Delete	90 	Executive 	100 				1700
+	Edit Edit	Copy Copy	Delete Delete	110 	Accounting 	205 				1700
+	Edit Edit	Copy Copy	Delete Delete	190 	Contracting 	NULL 				1700

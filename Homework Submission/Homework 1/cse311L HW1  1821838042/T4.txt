@@ -1,0 +1,37 @@
+
+CREATE TABLE LOCATIONS(
+	Location_id INT(5) PRIMARY KEY,
+    Street_Adress VARCHAR(15),
+    Postal_Code  VARCHAR(15),
+    City	 VARCHAR(15),
+    State_Province	 VARCHAR(15),
+    Country_id  VARCHAR(2)
+
+);
+
+
+
+
+
+INSERT INTO locations VALUES(1400,'2014 jabbewocky RD','26192 ','Southlake ','Texas ','US')
+INSERT INTO locations VALUES(1500 ,'2011 inrior Bivd','99236  ','South San Francisco ','California  ','US')
+INSERT INTO locations VALUES(1700  ,'2004 Charade Rd','98199   ','Seattle ','Washinton   ','US')
+INSERT INTO locations VALUES(1800   ,'460 Bloor St.W','ON M5S 1X8   ','Toronto  ','Ontario    ','CA')
+INSERT INTO locations VALUES(2500 ,'Magdalen center-The oxford Sc.Park','OX9 9ZB ','OXford','OXford','UK')
+
+
+
+
+SELECT *FROM locations
+Profiling [Edit inline] [ Edit ] [ Explain SQL ] [ Create PHP code ] [ Refresh]
+	Show all 	|
+			Number of rows:
+		Filter rows: 	Sort by key:
+	
++ Options
+Full texts 					  Location_id	Street_Adress	  Postal_Code	City	       State_Province	Country_id 	
+	Edit Edit	Copy Copy	Delete Delete	1400 	2014 jabbewocky 	26192 	Southlake 	Texas 		US
+	Edit Edit	Copy Copy	Delete Delete	1500 	2011 inrior Biv 	99236   South San Franc	California   	US
+	Edit Edit	Copy Copy	Delete Delete	1700 	2004 Charade Rd 	98199   Seattle 	Washinton   	US
+	Edit Edit	Copy Copy	Delete Delete	1800 	460 Bloor St.W 	  ON M5S 1X8   	Toronto   	Ontario     	CA
+	Edit Edit	Copy Copy	Delete Delete	2500 	Magdalen center 	OX9 9ZB  OXford 	OXford 		UK
