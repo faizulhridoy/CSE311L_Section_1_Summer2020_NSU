@@ -11,10 +11,10 @@ else
 }
  
 $sql= "CREATE TABLE Department (
-    Department_id INT PRIMARY KEY,
+    Department_id INT (5) PRIMARY KEY,
     Department_name VARCHAR(15) NOT NULL,
-    Manager_id INT,
-    Location_id INT
+    Manager_id INT(5),
+    Location_id INT(5)
 )";
 
 if(mysqli_query($link,$sql))
