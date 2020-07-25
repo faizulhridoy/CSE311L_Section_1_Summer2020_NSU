@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect('localhost','root','','assignment');
+$link = mysqli_connect('localhost','root','','Quiz');
 
 if($link==false)
 {
@@ -10,11 +10,11 @@ else
     echo "Connected";
 }
  
-$sql= "CREATE TABLE Department (
-    Department_id INT(5) PRIMARY KEY,
-    Department_name VARCHAR(15) NOT NULL,
-    Manager_id INT(5),
-    Location_id INT(5)
+$sql= "CREATE TABLE jobs (
+    job_id VARCHAR(10) PRIMARY KEY,
+    Department_name VARCHAR(35) NOT NULL,
+    Manager_id INT(6),
+    Location_id INT(6)
 )";
 
 if(mysqli_query($link,$sql))
