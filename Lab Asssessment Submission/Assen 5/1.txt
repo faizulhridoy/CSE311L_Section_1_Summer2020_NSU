@@ -1,0 +1,1 @@
+SELECT MAX (SALARY ) as 'maximum', MIN(SALARY ) as 'MInimum',SUM(SALARY)  AS 'sum', AVG(SALARY ) as 'avarage ' FROM employees
