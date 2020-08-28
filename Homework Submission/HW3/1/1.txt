@@ -1,0 +1,1 @@
+SELECT LAST_NAME, (SALARY/30) AS 'Daily salary', DEPEARTMENT_ID FROM employees

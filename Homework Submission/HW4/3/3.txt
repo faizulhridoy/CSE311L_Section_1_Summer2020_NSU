@@ -1,0 +1,1 @@
+SELECT d.department_name 'name', COUNT(e.employee_id) AS 'Number of people', l.location_id AS 'Location' (AVG(e.SALARY),2)AS 'salary' FROM employees e, locations l, departments d WHERE d.Department_id =- e.DEPEARTMENT_ID
